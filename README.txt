@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 this is prathyusa
 i am cute
 working on git
@@ -12,3 +13,7 @@ hi prathyusha
 =======
 all are errors
 >>>>>>> css-assignment
+=======
+
+This is edit file
+>>>>>>> 1f70162588cb79745de6fe3272e4af2982d914dc
