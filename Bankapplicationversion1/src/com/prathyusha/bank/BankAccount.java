@@ -1,17 +1,13 @@
 package com.prathyusha.bank;
 
-import java.util.Set;
-
-
-
-public class BankAccount {
+public abstract class BankAccount {
    //static variable
 	private static int autoAccountNo;
 	 // instance variable
 		private static int accountNo;
 		private String accoutHolderName;
-		private double accountBalance;
-		//init block
+		protected double accountBalance;
+		//init block reduce the redundancy of the code
 		{
      //System.out.println("init block");
 			accountNo=++autoAccountNo;
@@ -48,6 +44,7 @@ public class BankAccount {
 	 public double getAccountBalance() {
 		return accountBalance;
 	}
+	 
 	 //service methods
 	 public void withdraw(double amount){
 		 if(checkNegativeNum(amount)){
@@ -101,10 +98,11 @@ public class BankAccount {
 		 return false;
 	 }
 	 public static void main(String[] args) {
-		BankAccount acc=new BankAccount();
-		BankAccount acc1=new BankAccount("prathyusha",1500);
-		acc1.withdraw(2000);
-		acc1.deposit(-1);
+		 //at the time of object creation constructor gets call
+		//BankAccount acc=new BankAccount();
+		//BankAccount acc1=new BankAccount("prathyusha",1500);
+		//acc1.withdraw(2000);
+		//acc1.deposit(-1);
 	}
 	
 
