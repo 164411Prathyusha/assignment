@@ -1,0 +1,21 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd ">
+	<bean id="CustomerClass1" class="com.prathyusha.springs.springCore;">
+		<property name="customerId " value="164411" />
+		<property name="customerName " value="Prathyusha" />
+		<property name=" customerContact" value="8686047856" />
+		<property name="customerAddress" ref="AddressClass1" />
+	</bean>
+	<bean id="AddressClass1" class="com.prathyusha.springs.springCore;">
+		<property name="street " value="Multiplex" />
+		<property name="city " value="Bangalore" />
+		<property name="state" value="Karnataka" />
+		<property name="zip" value="560100" />
+		<property name=" country" value="India" />
+	</bean>
+</beans>
